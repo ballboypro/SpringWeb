@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<p style="text-align:center;">
+    <img src="http://alatoo.edu.kg/image?img=thumb_image_Iaau_logo_7105887500531894667.jpg" alt=""
+         width="120" height="100">
+</p>
+<table class="table">
+    <thead class="thead-light">
+    <tr>
+        <th>Anime ID</th>
+        <th>Name</th>
+        <th>Genre</th>
+        <th>Classification</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr  th:each="anime : ${animeTop}">
+        <td th:text="${anime.animeId}">Anime ID</td>
+        <td th:text="${anime.name}">Name</td>
+        <td th:text="${anime.genre}">Genre</td>
+        <td th:text="${anime.classification}">Classification</td>
+    </tr>
+    </tbody>
+</table>
+
+<div>
+    <form action="#" th:action="@{/save}" th:object="${newAnime}" method="post">
+        <input type="text" name="name" placeholder="Name" />
+        <input type="text" name="genre" placeholder="Genre">
+        <input type="text" name="classification" placeholder="Classification">
+        <button type="submit">Add</button>
+    </form>
+</div>
+
+</body>
+</html>
