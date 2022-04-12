@@ -24,9 +24,9 @@ public class AnimeController {
         return "home";
     }
 
-//    @RequestMapping(value = "/save", method = RequestMethod.POST)
-//    public String addAnime( @ModelAttribute ("anime123") Anime anime){
-//        animeService.saveAnime(anime);
-//        return "redirect:/";
-//    }
+    @RequestMapping(value = "/save", method = RequestMethod.POST)
+    public String addAnime( @ModelAttribute ("anime123") Anime anime){
+        animeService.saveAnime(anime);
+        return "redirect:/";
+    }
 }
