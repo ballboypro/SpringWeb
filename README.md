@@ -9,4 +9,6 @@ https://spring-web-mid.herokuapp.com/
 
 
 The main page:
-![image_2022-04-14_00-46-35](https://user-images.githubusercontent.com/73142059/163250795-4bb89c9f-8fa4-41a6-9b32-286c6c7b6ebd.png)
+![image_2022-04-14_00-29-08](https://user-images.githubusercontent.com/73142059/163250899-e8b81186-b058-4dfb-862b-f01d33a2bbd0.png)
+
+
